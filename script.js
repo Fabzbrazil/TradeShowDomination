@@ -37,31 +37,52 @@ const observer = new IntersectionObserver((entries) => {
 
 // Add fade-in class to elements and observe them
 document.querySelectorAll(
-    '.pain-card, .timeline-item, .result-card, .show-card, .about-text, .cta-text, .cta-form-wrapper'
+    '.pain-card, .module-card, .result-card, .show-card, .about-text, .cta-text, .cta-form-wrapper, .leadmagnet-text, .leadmagnet-form-wrapper, .shift-card, .shift-callout, .pricing-card, .insight-card, .stat-item'
 ).forEach(el => {
     el.classList.add('fade-in');
     observer.observe(el);
 });
 
-// Form handling
+// Lead magnet form handling
+const leadMagnetForm = document.getElementById('leadMagnetForm');
+if (leadMagnetForm) {
+    leadMagnetForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const formData = new FormData(leadMagnetForm);
+        const data = Object.fromEntries(formData);
+
+        // Show success message (replace with real form handler later - e.g. ConvertKit, Mailchimp, etc.)
+        leadMagnetForm.innerHTML = `
+            <div class="form-success">
+                <h3>Check Your Inbox!</h3>
+                <p>The guide is on its way to <strong>${data.email}</strong>. If you don't see it in a few minutes, check your spam folder.</p>
+            </div>
+        `;
+
+        console.log('Lead magnet form submitted:', data);
+    });
+}
+
+// Contact form handling
 const contactForm = document.getElementById('contactForm');
-contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
+if (contactForm) {
+    contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const formData = new FormData(contactForm);
+        const data = Object.fromEntries(formData);
 
-    const formData = new FormData(contactForm);
-    const data = Object.fromEntries(formData);
+        // Show success message (replace with real form handler later)
+        contactForm.innerHTML = `
+            <div class="form-success">
+                <h3>Got It!</h3>
+                <p>I'll get back to you personally within 24 hours. Looking forward to talking strategy.</p>
+                <p style="margin-top: 12px; font-size: 0.9rem;">&mdash; Fabio</p>
+            </div>
+        `;
 
-    // For now, show success message (replace with real form handler later)
-    contactForm.innerHTML = `
-        <div class="form-success">
-            <h3>You're In!</h3>
-            <p>We'll reach out within 24 hours to schedule your free strategy call. Check your inbox.</p>
-        </div>
-    `;
-
-    // Log form data to console for now
-    console.log('Form submitted:', data);
-});
+        console.log('Contact form submitted:', data);
+    });
+}
 
 // Smooth scroll for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
