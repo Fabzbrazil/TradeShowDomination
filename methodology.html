@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Methodology | Fabio Cesar</title>
+<meta name="description" content="The strategic frameworks inside the Tradeshow ROI Playbook. The 4-Question Filter, the 20/45/35 Rule, the 4-Layer Tactic Framework, and more.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #000;
+  color: #fff;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+.highlight {
+  color: #FF6B35;
+  display: inline-block;
+}
+.eyebrow {
+  display: inline-block;
+  color: #FF6B35;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+.eyebrow::before { content: "• "; margin-right: 4px; }
+
+.btn {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+.btn-primary { background: #FF6B35; color: #fff; }
+.btn-primary:hover { background: #ff8255; }
+.btn-secondary {
+  background: rgba(255, 107, 53, 0.1);
+  color: #FF6B35;
+  border: 1px solid rgba(255, 107, 53, 0.4);
+}
+.btn-secondary:hover { background: rgba(255, 107, 53, 0.2); border-color: #FF6B35; }
+.btn-lg { padding: 18px 36px; font-size: 16px; }
+.btn-arrow::after { content: " →"; margin-left: 4px; }
+
+.nav {
+  padding: 24px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+.nav-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+.logo {
+  font-weight: 800;
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: -0.3px;
+}
+.logo span { color: #FF6B35; }
+.nav-links { display: flex; gap: 16px; align-items: center; }
+.nav-links a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.nav-links a:hover { color: #fff; }
+
+.page-hero {
+  padding: 80px 0 60px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+.page-hero h1 {
+  font-size: clamp(40px, 5vw, 64px);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -1.5px;
+  margin-bottom: 24px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.page-hero p {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.section { padding: 80px 0; border-bottom: 1px solid rgba(255, 255, 255, 0.05); }
+.section h2 {
+  font-size: clamp(32px, 4vw, 48px);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -1.5px;
+  margin-bottom: 24px;
+  max-width: 800px;
+}
+.section-intro {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 700px;
+  margin-bottom: 56px;
+  line-height: 1.6;
+}
+
+.frameworks-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+.framework-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 32px;
+  transition: all 0.2s;
+}
+.framework-card:hover {
+  border-color: rgba(255, 107, 53, 0.3);
+  background: rgba(255, 255, 255, 0.05);
+}
+.framework-number {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  color: #FF6B35;
+  letter-spacing: 1.5px;
+  margin-bottom: 16px;
+}
+.framework-card h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  letter-spacing: -0.5px;
+}
+.framework-card p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.about-section {
+  padding: 80px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.about-grid p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 17px;
+  line-height: 1.8;
+  margin-bottom: 24px;
+}
+.about-grid p strong { color: #fff; }
+.about-grid .highlight-quote {
+  border-left: 3px solid #FF6B35;
+  padding-left: 24px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  margin: 32px 0;
+  line-height: 1.5;
+}
+
+.stats-section {
+  background: #FF6B35;
+  color: #fff;
+  padding: 60px 0;
+}
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  text-align: center;
+}
+.stat-item-orange .stat-num {
+  display: block;
+  font-size: clamp(36px, 4vw, 56px);
+  font-weight: 800;
+  margin-bottom: 8px;
+  letter-spacing: -1.5px;
+}
+.stat-item-orange .stat-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  opacity: 0.9;
+}
+
+.cta-section {
+  padding: 100px 0;
+  text-align: center;
+}
+.cta-section h2 {
+  font-size: clamp(36px, 4vw, 56px);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -1.5px;
+  margin-bottom: 24px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cta-section p {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 600px;
+  margin: 0 auto 40px;
+}
+
+.footer {
+  padding: 60px 0 32px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  text-align: center;
+}
+.footer-tag {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  margin-bottom: 32px;
+}
+.social-icons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+.social-icons a {
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: all 0.2s;
+}
+.social-icons a:hover {
+  background: rgba(255, 107, 53, 0.1);
+  border-color: #FF6B35;
+  color: #FF6B35;
+}
+.footer-bottom {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.3);
+}
+.footer-bottom a {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  margin: 0 12px;
+}
+
+@media (max-width: 768px) {
+  .container { padding: 0 20px; }
+  .frameworks-grid { grid-template-columns: 1fr; }
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .section { padding: 60px 0; }
+  .nav-links a:not(.btn) { display: none; }
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">Fabio<span>Cesar</span></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="https://fabioimportsbrazil.substack.com" target="_blank" rel="noopener">Blog</a>
+      <a href="index.html#download" class="btn btn-primary">Get the Playbook</a>
+    </div>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow">The Methodology</span>
+    <h1>The frameworks behind the <span class="highlight">Playbook.</span></h1>
+    <p>After advising hundreds of foodservice exhibitors at the National Restaurant Show, I've codified the patterns that separate top performers from everyone else. Here's the thinking behind the playbook.</p>
+  </div>
+</section>
+
+<section class="stats-section">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item-orange">
+        <span class="stat-num">2,300+</span>
+        <span class="stat-label">Exhibitors</span>
+      </div>
+      <div class="stat-item-orange">
+        <span class="stat-num">~58,000</span>
+        <span class="stat-label">Total Attendees</span>
+      </div>
+      <div class="stat-item-orange">
+        <span class="stat-num">147K+</span>
+        <span class="stat-label">Searches in 2025</span>
+      </div>
+      <div class="stat-item-orange">
+        <span class="stat-num">4 Days</span>
+        <span class="stat-label">To Make It Count</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <span class="eyebrow">Core Frameworks</span>
+    <h2>The 8 frameworks that <span class="highlight">drive ROI.</span></h2>
+    <p class="section-intro">Each framework solves a specific problem most exhibitors get wrong. Together, they form the complete operating system inside the playbook.</p>
+
+    <div class="frameworks-grid">
+
+      <div class="framework-card">
+        <span class="framework-number">FRAMEWORK 01</span>
+        <h3>The 4-Question Filter</h3>
+        <p>Before committing $25K+ to any show, exhibitors should answer 4 questions: Is my audience here? Are my competitors here? Can I differentiate? Does the show have the infrastructure to support me? Most skip this and pay the price.</p>
+      </div>
+
+      <div class="framework-card">
+        <span class="framework-number">FRAMEWORK 02</span>
+        <h3>The 20/45/35 Budget Rule</h3>
+        <p>The single biggest reason exhibitors waste money. Top performers allocate 20% to booth space, 45% to operational expenses, and 35% to sales &amp; marketing tactics. Most companies put 90–100% into booth + operations and $0 into what actually drives ROI.</p>
+      </div>
+
+      <div class="framework-card">
+        <span class="framework-number">FRAMEWORK 03</span>
+        <h3>The 4-Layer Tactic Framework</h3>
+        <p>There are 100+ possible pre-show and on-site tactics. The wrong order means wasted money. Build in layers: Foundation tactics first (online profile, free invites), then Digital, then Low-Effort On-Site, then Experiential. Skip a layer at your own risk.</p>
+      </div>
+
+      <div class="framework-card">
+        <span class="framework-number">FRAMEWORK 04</span>
+        <h3>The 5 Goal Categories</h3>
+        <p>Not every tactic fits every exhibitor. Match tactics to your primary goal: Branding, Thought Leadership, Product Activation, Networking, or Traffic Driving. A tactic that's brilliant for one goal is wasteful for another.</p>
+      </div>
+
+      <div class="framework-card">
+        <span class="framework-number">FRAMEWORK 05</span>
+        <h3>Booth Selection Truths</h3>
+        <p>90% of attendees visit all three halls at some point. Which hall matters less than most exhibitors think. What matters more: who your neighboring exhibitors are and where you're positioned within the hall. Position trumps prestige.</p>
+      </div>
+
+      <div class="framework-card">
+        <span class="framework-number">FRAMEWORK 06</span>
+        <h3>Context Over Contacts</h3>
+        <p>Badge scan volume is a vanity metric. What matters is what's happening inside each prospect's business. A conversation where you captured business context is worth 10 generic badge scans. This changes how you staff and train your booth team.</p>
+      </div>
+
+      <div class="framework-card">
+        <span class="framework-number">FRAMEWORK 07</span>
+        <h3>The 48-Hour Rule</h3>
+        <p>Industry standard for post-show follow-up: 10 business days. Top exhibitors do it in 48 hours, with personalized outreach referencing specific booth conversations. Every hour you wait, your lead gets colder. This is where most tradeshow ROI is lost.</p>
+      </div>
+
+      <div class="framework-card">
+        <span class="framework-number">FRAMEWORK 08</span>
+        <h3>30/60/90 ROI Reporting</h3>
+        <p>ROI isn't a vague feeling about whether the show was worth it. It's a number. Forecast KPIs before you commit. Measure against them at 30, 60, and 90-day checkpoints. Report real numbers to stakeholders. That's how good exhibitors become great ones.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="about-section">
+  <div class="container">
+    <div class="about-grid">
+      <span class="eyebrow">About Fabio</span>
+      <h2>I help foodservice companies win at <span class="highlight">tradeshows.</span></h2>
+      <p style="margin-top: 24px;">I'm a consultant for the National Restaurant Show. I help companies looking to sell into the foodservice industry maximize their ROI in the tradeshow world.</p>
+      <p>I've advised hundreds of clients — from first-time exhibitors figuring out where to start to established brands trying to justify their six-figure investment to leadership. I've seen what works at every scale, in every category, across food, beverage, equipment, technology, and service exhibitors.</p>
+      <div class="highlight-quote">"It's never the booth size. It's always the strategy."</div>
+      <p>I've watched companies spend $100K on a booth and $0 on strategy. I've watched companies spend $20K on a booth, $45K on operations, and $35K on the right sales and marketing tactics. The second company wins every time.</p>
+      <p>That's what I built into the playbook — the complete pre-show, on-site, and post-show operating system that turns your tradeshow from a cost center into a revenue driver. The frameworks above aren't theory. They're the patterns I've watched separate winning exhibitors from struggling ones, refined over years of being inside the industry.</p>
+      <p>I'm also originally from Brazil and fluent in Portuguese. I work with Brazilian foodservice, beverage, equipment, and technology companies looking to break into the US market through the National Restaurant Show. If you're a Brazilian company exploring US expansion, the playbook is a starting point — and we should talk.</p>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container">
+    <h2>Ready to stop wasting your <span class="highlight">tradeshow budget?</span></h2>
+    <p>Get the complete playbook. Tracker, frameworks, and tactical guide — all free.</p>
+    <a href="index.html#download" class="btn btn-primary btn-lg btn-arrow">Get the Playbook</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <p class="footer-tag">Tradeshow strategy for foodservice. Built inside the National Restaurant Show.</p>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/fabiocesarjr/" target="_blank" rel="noopener" title="LinkedIn">in</a>
+      <a href="https://fabioimportsbrazil.substack.com" target="_blank" rel="noopener" title="Substack">✎</a>
+      <a href="https://www.instagram.com/fabioimportsbrazil/" target="_blank" rel="noopener" title="Instagram">📷</a>
+      <a href="https://www.tiktok.com/@fabioimportsbrazil" target="_blank" rel="noopener" title="TikTok">🎵</a>
+      <a href="mailto:fabscesar@gmail.com" title="Email">@</a>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 Fabio Cesar · <a href="index.html">Home</a> · <a href="mailto:fabscesar@gmail.com">Contact</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
