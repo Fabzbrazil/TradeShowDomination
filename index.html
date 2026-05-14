@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Tradeshow ROI Playbook | Fabio Cesar</title>
-<meta name="description" content="A free guide and tracker built for foodservice companies exhibiting at the National Restaurant Show. Stop wasting your tradeshow budget.">
+<meta name="description" content="A Tradeshow Playbook built for companies selling into the foodservice industry. Made by a Top Consultant for the National Restaurant Association Show.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -179,7 +179,7 @@ body {
   position: relative;
 }
 .tracker-preview::before {
-  content: "STRATEGIC PLAYBOOK · 7 PAGES";
+  content: "STRATEGIC PLAYBOOK · 7 SECTIONS";
   position: absolute;
   top: -12px;
   left: 24px;
@@ -207,6 +207,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 16px;
   padding: 12px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
@@ -215,6 +216,7 @@ body {
   display: flex;
   align-items: center;
   gap: 12px;
+  flex-shrink: 0;
 }
 .tracker-page-num {
   font-size: 11px;
@@ -231,7 +233,9 @@ body {
   font-size: 11px;
   font-weight: 600;
   color: #FF6B35;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.3px;
+  text-align: right;
+  line-height: 1.3;
 }
 .tracker-page-row.highlight-row {
   background: rgba(255, 107, 53, 0.05);
@@ -239,24 +243,6 @@ body {
   padding: 12px 16px;
   border-radius: 8px;
   border: 1px solid rgba(255, 107, 53, 0.2);
-}
-.tracker-preview-footer {
-  margin-top: 16px;
-  padding-top: 16px;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
-  text-align: center;
-}
-.tracker-preview-footer .footer-label {
-  font-size: 10px;
-  color: rgba(255, 255, 255, 0.4);
-  letter-spacing: 1.2px;
-  text-transform: uppercase;
-  margin-bottom: 6px;
-}
-.tracker-preview-footer .footer-value {
-  font-size: 24px;
-  font-weight: 800;
-  color: #FF6B35;
 }
 
 .form-section {
@@ -600,6 +586,7 @@ body {
   .form-wrapper { padding: 28px; }
   .qualifier-grid { grid-template-columns: 1fr; }
   .tracker-preview { padding: 24px; }
+  .tracker-page-status { font-size: 10px; }
   .nav-links { gap: 12px; }
   .nav-links a:not(.btn) { display: none; }
 }
@@ -622,22 +609,22 @@ body {
   <div class="container">
     <div class="hero-grid">
       <div class="hero-content">
-        <span class="eyebrow">The Tradeshow ROI Playbook · Free</span>
+        <span class="eyebrow">The Tradeshow ROI Playbook · $10k Value · Free</span>
         <h1>Stop Wasting Your Tradeshow <span class="highlight">Budget.</span></h1>
-        <p class="hero-sub">A free guide, tracker, and strategic insights built for foodservice companies exhibiting at the National Restaurant Show. The same operating system I've used with hundreds of clients.</p>
-        <a href="#download" class="btn btn-primary btn-lg">Get the Free Playbook</a>
+        <p class="hero-sub">A Tradeshow Playbook built for companies selling into the foodservice industry. Made by a Top Consultant for the National Restaurant Association Show. Built from the learnings I have accrued across hundreds of clients.</p>
+        <a href="#download" class="btn btn-primary btn-lg">Get Free Playbook</a>
         <div class="hero-stats">
           <div class="hero-stat">
-            <span class="stat-num">100+</span>
+            <span class="stat-num">200+</span>
             <span class="stat-label">Clients Advised</span>
           </div>
           <div class="hero-stat">
             <span class="stat-num">7</span>
-            <span class="stat-label">Strategic Pages</span>
+            <span class="stat-label">Key Sections</span>
           </div>
           <div class="hero-stat">
-            <span class="stat-num">100+</span>
-            <span class="stat-label">Tactics Mapped</span>
+            <span class="stat-num">10x</span>
+            <span class="stat-label">Your ROI</span>
           </div>
         </div>
       </div>
@@ -651,53 +638,49 @@ body {
             <span class="tracker-page-num">01</span>
             <span class="tracker-page-name">Executive Dashboard</span>
           </div>
-          <span class="tracker-page-status">30-SEC VIEW</span>
+          <span class="tracker-page-status">Stay in the loop<br>with a high-level tracker</span>
         </div>
         <div class="tracker-page-row">
           <div class="tracker-page-info">
             <span class="tracker-page-num">02</span>
             <span class="tracker-page-name">Tradeshow Evaluation</span>
           </div>
-          <span class="tracker-page-status">4-Q FILTER</span>
+          <span class="tracker-page-status">Should you even<br>exhibit at this show?</span>
         </div>
         <div class="tracker-page-row highlight-row">
           <div class="tracker-page-info">
             <span class="tracker-page-num">03</span>
             <span class="tracker-page-name">Strategy &amp; Foundation</span>
           </div>
-          <span class="tracker-page-status">20/45/35</span>
+          <span class="tracker-page-status">I'm in...<br>what's next?</span>
         </div>
         <div class="tracker-page-row">
           <div class="tracker-page-info">
             <span class="tracker-page-num">04</span>
             <span class="tracker-page-name">Tactic Selection</span>
           </div>
-          <span class="tracker-page-status">4 LAYERS</span>
+          <span class="tracker-page-status">Build a custom<br>strategy</span>
         </div>
         <div class="tracker-page-row">
           <div class="tracker-page-info">
             <span class="tracker-page-num">05</span>
             <span class="tracker-page-name">On-Site Execution</span>
           </div>
-          <span class="tracker-page-status">CONTEXT</span>
+          <span class="tracker-page-status">Where strategy<br>meets execution</span>
         </div>
         <div class="tracker-page-row">
           <div class="tracker-page-info">
             <span class="tracker-page-num">06</span>
             <span class="tracker-page-name">Post-Show Conversion</span>
           </div>
-          <span class="tracker-page-status">48-HR RULE</span>
+          <span class="tracker-page-status">Where ROI is won<br>or lost</span>
         </div>
         <div class="tracker-page-row">
           <div class="tracker-page-info">
             <span class="tracker-page-num">07</span>
             <span class="tracker-page-name">Strategic Calls Log</span>
           </div>
-          <span class="tracker-page-status">ROI TRACK</span>
-        </div>
-        <div class="tracker-preview-footer">
-          <div class="footer-label">Total Show Investment Target</div>
-          <div class="footer-value">20 / 45 / 35</div>
+          <span class="tracker-page-status">&nbsp;</span>
         </div>
       </div>
     </div>
@@ -710,7 +693,7 @@ body {
       <div class="form-content">
         <span class="eyebrow">Free Download</span>
         <h2>Get the Tradeshow ROI <span class="highlight">Playbook.</span></h2>
-        <p>The complete strategic guide, tracker, and tactical playbook I built from years inside the National Restaurant Show. Used by foodservice companies of every size.</p>
+        <p>A complete step by step guide I built from years advising companies exhibiting at the National Restaurant Show. Used by startups to fortune 500 companies.</p>
         <ul class="objection-list">
           <li class="objection-item">
             <span class="objection-check">✓</span>
@@ -796,17 +779,17 @@ body {
         <h3>This is for you if:</h3>
         <ul class="qualifier-list">
           <li><span class="qualifier-icon icon-yes">✓</span><span>You sell into the foodservice industry (food, beverage, equipment, technology)</span></li>
-          <li><span class="qualifier-icon icon-yes">✓</span><span>You're exhibiting at the National Restaurant Show or considering it</span></li>
+          <li><span class="qualifier-icon icon-yes">✓</span><span>You're considering to exhibit at the National Restaurant Show or any foodservice related show</span></li>
           <li><span class="qualifier-icon icon-yes">✓</span><span>You have $25K+ to invest in your tradeshow strategy</span></li>
-          <li><span class="qualifier-icon icon-yes">✓</span><span>You want to maximize ROI, not just show up</span></li>
+          <li><span class="qualifier-icon icon-yes">✓</span><span>You are ready to learn from others</span></li>
         </ul>
       </div>
       <div class="qualifier-card">
         <h3>This is not for you if:</h3>
         <ul class="qualifier-list">
-          <li><span class="qualifier-icon icon-no">✕</span><span>You sell direct-to-consumer (B2C) products</span></li>
+          <li><span class="qualifier-icon icon-no">✕</span><span>You only sell direct-to-consumer (B2C) products with no wholesale model</span></li>
           <li><span class="qualifier-icon icon-no">✕</span><span>You have under $10K to spend on a tradeshow</span></li>
-          <li><span class="qualifier-icon icon-no">✕</span><span>You're looking for a generic tradeshow guide that applies to any industry</span></li>
+          <li><span class="qualifier-icon icon-no">✕</span><span>You refuse to change your current strategy</span></li>
           <li><span class="qualifier-icon icon-no">✕</span><span>You want shortcuts instead of strategy</span></li>
         </ul>
       </div>
@@ -820,7 +803,7 @@ body {
       <span class="eyebrow">About Fabio</span>
       <h2>I'm a consultant for the National Restaurant Show.</h2>
       <p>I've advised hundreds of clients — from first-time exhibitors to established brands trying to justify six-figure investments to leadership. The difference between companies that get tradeshow results and ones that don't? <strong style="color: #fff;">It's never the booth size. It's always the strategy.</strong></p>
-      <p>I built this playbook because most exhibitors are flying blind. There's no shortage of generic advice. There's a real shortage of strategic frameworks built by someone who sits inside the industry. That's what this is.</p>
+      <p>I built this playbook because most exhibitors are flying blind. There's no shortage of generic advice. There's a real shortage of strategic frameworks built by someone whose learned by actually working + studying the industry. That's what this is.</p>
       <div class="about-mini-cta">
         <a href="methodology.html" class="btn btn-secondary btn-arrow">Read the Full Methodology</a>
       </div>
@@ -867,7 +850,7 @@ body {
 
 <footer class="footer">
   <div class="container">
-    <p class="footer-tag">Tradeshow strategy for foodservice. Built inside the <a href="https://www.nationalrestaurantshow.com/" target="_blank" rel="noopener">National Restaurant Show</a>.</p>
+    <p class="footer-tag">Built off learnings from the <a href="https://www.nationalrestaurantshow.com/" target="_blank" rel="noopener">National Restaurant Show</a>.</p>
     <div class="social-icons">
       <a href="https://www.linkedin.com/in/fabiocesarjr/" target="_blank" rel="noopener" title="LinkedIn">in</a>
       <a href="https://fabioimportsbrazil.substack.com" target="_blank" rel="noopener" title="Substack">✎</a>
