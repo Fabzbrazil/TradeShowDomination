@@ -3,73 +3,247 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Thank You | Fabio Cesar</title>
-<meta name="description" content="Thanks for requesting the Strategic Performance Tracker. Here's your link.">
+<title>You're In | The Tradeshow ROI Playbook</title>
+<meta name="description" content="Your Tradeshow ROI Playbook is ready.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #000;
+  color: #fff;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+.highlight { color: #FF6B35; }
+
+.btn {
+  display: inline-block;
+  padding: 18px 36px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+.btn-primary { background: #FF6B35; color: #fff; }
+.btn-primary:hover { background: #ff8255; }
+.btn-secondary {
+  background: rgba(255, 107, 53, 0.1);
+  color: #FF6B35;
+  border: 1px solid rgba(255, 107, 53, 0.4);
+}
+.btn-secondary:hover { background: rgba(255, 107, 53, 0.2); }
+
+.nav {
+  padding: 24px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+.nav-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+.logo {
+  font-weight: 800;
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+}
+.logo span { color: #FF6B35; }
+.nav-links a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 24px;
+}
+
+.hero {
+  padding: 80px 0 60px;
+  text-align: center;
+  position: relative;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(255, 107, 53, 0.08) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+.success-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255, 107, 53, 0.1);
+  border: 1px solid rgba(255, 107, 53, 0.3);
+  color: #FF6B35;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+.success-badge::before {
+  content: "✓";
+  font-size: 14px;
+}
+
+.hero h1 {
+  font-size: clamp(40px, 5vw, 64px);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -1.5px;
+  margin-bottom: 24px;
+}
+.hero p {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 600px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+}
+.hero-ctas {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+}
+
+.next-steps {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 40px;
+  margin: 40px auto;
+  max-width: 600px;
+  text-align: left;
+}
+.next-steps h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+.next-steps ol {
+  list-style: none;
+  counter-reset: step;
+}
+.next-steps li {
+  counter-increment: step;
+  display: flex;
+  gap: 16px;
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+}
+.next-steps li:last-child { border-bottom: none; }
+.next-steps li::before {
+  content: counter(step);
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  background: #FF6B35;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 13px;
+}
+.next-steps strong { color: #fff; }
+.next-steps a {
+  color: #FF6B35;
+  text-decoration: none;
+}
+.next-steps a:hover { text-decoration: underline; }
+
+.note {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 32px;
+}
+
+.footer {
+  padding: 40px 0;
+  text-align: center;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+@media (max-width: 768px) {
+  .hero h1 { font-size: 36px; }
+  .hero-ctas { flex-direction: column; }
+  .next-steps { padding: 28px; }
+}
+</style>
 </head>
 <body>
+
 <nav class="nav">
-<div class="container nav-inner">
-<a href="/" class="logo">Fabio<span>Cesar</span></a>
-<div class="nav-links">
-<a href="/">Back to Home</a>
-<a href="https://fabioimportsbrazil.substack.com" target="_blank" rel="noopener">Blog</a>
-</div>
-</div>
+  <div class="nav-inner">
+    <a href="index.html" class="logo">Fabio<span>Cesar</span></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="https://fabioimportsbrazil.substack.com" target="_blank" rel="noopener">Blog</a>
+    </div>
+  </div>
 </nav>
-<section class="hero" style="min-height: 70vh;">
-<div class="container">
-<div class="hero-content" style="text-align: center; max-width: 800px; margin: 0 auto;">
-<div class="hero-badge">You're In</div>
-<h1>Your Tracker Link Is <span class="highlight">Below.</span></h1>
-<p class="hero-sub">Thanks for requesting the Strategic Performance Tracker. The full 7-page operating system is ready for you to use right now. Click the button below to open it in your browser. You can also bookmark it or duplicate it into your own Notion workspace.</p>
-<div class="hero-ctas" style="justify-content: center;">
-<a href="https://cubic-glue-899.notion.site/Tradeshow-Performance-Tracker-35f07cf804a08042a784c6c75c213eb2" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Open the Tracker</a>
-<a href="https://fabioimportsbrazil.substack.com" target="_blank" rel="noopener" class="btn btn-ghost btn-lg">Read the Blog</a>
-</div>
-<div style="margin-top: 60px; padding: 30px; background: rgba(255,255,255,0.05); border-radius: 12px; max-width: 600px; margin-left: auto; margin-right: auto;">
-<h3 style="margin-bottom: 16px;">What to do next:</h3>
-<ol style="text-align: left; line-height: 1.8; padding-left: 20px;">
-<li><strong>Start with the Executive Dashboard</strong> &mdash; the 30-second overview of the full system.</li>
-<li><strong>Then read the Tradeshow Evaluation page</strong> &mdash; the 4 questions that determine whether a show is worth your investment.</li>
-<li><strong>Work through the rest in order</strong> &mdash; Strategy &amp; Foundation, Tactic Selection, On-Site Execution, Post-Show Conversion, Strategic Calls Log.</li>
-<li><strong>Have questions?</strong> Connect on <a href="https://www.linkedin.com/in/fabiocesarjr/" target="_blank" rel="noopener" style="color: var(--accent);">LinkedIn</a> or email me at <a href="mailto:fabscesar@gmail.com" style="color: var(--accent);">fabscesar@gmail.com</a>.</li>
-</ol>
-</div>
-<p style="margin-top: 40px; opacity: 0.7;">A copy of this link has also been sent to the email you provided. Check your spam folder if you don't see it within a few minutes.</p>
-</div>
-</div>
-<div class="hero-bg"></div>
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <div class="success-badge">You're In</div>
+      <h1>Your Playbook Is <span class="highlight">Ready.</span></h1>
+      <p>Thanks for requesting the Tradeshow ROI Playbook. The full 7-page operating system is ready to use right now. Click below to open it in your browser, bookmark it, or duplicate it into your own Notion workspace.</p>
+      <div class="hero-ctas">
+        <a href="https://cubic-glue-899.notion.site/Tradeshow-Performance-Tracker-35f07cf804a08042a784c6c75c213eb2" target="_blank" rel="noopener" class="btn btn-primary">Open the Playbook</a>
+        <a href="https://fabioimportsbrazil.substack.com" target="_blank" rel="noopener" class="btn btn-secondary">Read the Blog</a>
+      </div>
+
+      <div class="next-steps">
+        <h3>What to do next:</h3>
+        <ol>
+          <li><span><strong>Start with the Executive Dashboard</strong> — the 30-second overview of the full system.</span></li>
+          <li><span><strong>Then read the Tradeshow Evaluation page</strong> — the 4 questions that determine whether a show is worth your investment.</span></li>
+          <li><span><strong>Work through the rest in order</strong> — Strategy &amp; Foundation, Tactic Selection, On-Site Execution, Post-Show Conversion, Strategic Calls Log.</span></li>
+          <li><span><strong>Have questions?</strong> Connect on <a href="https://www.linkedin.com/in/fabiocesarjr/" target="_blank" rel="noopener">LinkedIn</a> or email me at <a href="mailto:fabscesar@gmail.com">fabscesar@gmail.com</a>.</span></li>
+        </ol>
+      </div>
+
+      <p class="note">A copy of this link has been sent to the email you provided. Check your spam folder if you don't see it within a few minutes.</p>
+    </div>
+  </div>
 </section>
+
 <footer class="footer">
-<div class="container">
-<div class="footer-inner">
-<div class="footer-brand">
-<a href="/" class="logo">Fabio<span>Cesar</span></a>
-<p>Helping foodservice companies maximize their tradeshow ROI at the National Restaurant Show.</p>
-</div>
-<div class="footer-links">
-<div class="footer-col">
-<h4>Navigate</h4>
-<a href="/">Home</a>
-<a href="https://fabioimportsbrazil.substack.com" target="_blank" rel="noopener">Blog</a>
-<a href="mailto:fabscesar@gmail.com">Email Me</a>
-</div>
-<div class="footer-col">
-<h4>Connect</h4>
-<a href="https://www.linkedin.com/in/fabiocesarjr/" target="_blank" rel="noopener">LinkedIn</a>
-<a href="https://www.instagram.com/fabioimportsbrazil/" target="_blank" rel="noopener">Instagram</a>
-<a href="https://www.tiktok.com/@fabioimportsbrazil" target="_blank" rel="noopener">TikTok</a>
-</div>
-</div>
-</div>
-<div class="footer-bottom">
-<p>&copy; 2026 Fabio Cesar. All rights reserved.</p>
-</div>
-</div>
+  &copy; 2026 Fabio Cesar
 </footer>
+
 </body>
 </html>
