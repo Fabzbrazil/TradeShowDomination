@@ -275,6 +275,10 @@ html[data-lang="en"] [lang="pt"], html[data-lang="pt"] [lang="en"] { display:non
   .nav-links .btn { white-space:nowrap; }
   .sh-dream-a { width:120px; right:-60px; bottom:-60px; }
 }
+.cafe-banner { margin-top:56px; border-radius:24px; overflow:hidden; position:relative; box-shadow:0 16px 40px rgba(0,34,68,.15); }
+.cafe-banner img { width:100%; height:auto; display:block; }
+.cafe-banner figcaption { position:absolute; left:16px; bottom:16px; background:var(--yellow); color:var(--navy); font-family:var(--head); font-weight:700; font-size:14px; padding:8px 16px; border-radius:999px; }
+@media (max-width:768px){ .cafe-banner { margin-top:36px; } .cafe-banner img { height:160px; object-fit:cover; } .cafe-banner figcaption { font-size:11px; left:8px; right:8px; bottom:8px; text-align:center; } }
 </style>
 </head>
 <body>
@@ -337,10 +341,11 @@ html[data-lang="en"] [lang="pt"], html[data-lang="pt"] [lang="en"] { display:non
         <span class="chapter-num">01</span>
         <span class="eyebrow"><span lang="en">Joinville, Brazil</span><span lang="pt">Joinville, Brasil</span></span>
         <h2><span lang="en">It started with a <span class="highlight">lanchonete.</span></span><span lang="pt">Tudo começou com uma <span class="highlight">lanchonete.</span></span></h2>
-        <p class="lead"><span lang="en">My dad and his father opened one of the first lanchonetes in Joinville. Foodservice has been in my family from the start.</span><span lang="pt">Meu pai e o pai dele abriram uma das primeiras lanchonetes de Joinville. O food service está na minha família desde o começo.</span></p>
+        <p class="lead"><span lang="en">In the 1990s, my dad and his father opened Café Expresso, one of the first lanchonetes in Joinville. It's still there today, now known as Pavão Lanchonete e Pizzaria. Foodservice has been in my family from the start.</span><span lang="pt">Nos anos 1990, meu pai e o pai dele abriram o Café Expresso, uma das primeiras lanchonetes de Joinville. Ele continua lá até hoje, agora como Pavão Lanchonete e Pizzaria. O food service está na minha família desde o começo.</span></p>
         <p class="lead"><span lang="en">But my dad always had his eye on America and the American dream.</span><span lang="pt">Mas meu pai sempre teve os olhos nos Estados Unidos e no sonho americano.</span></p>
       </div>
     </div>
+    <figure class="cafe-banner"><img src="img/about/cafe-expresso.jpg" alt="Café Expresso in Joinville, Brazil" loading="lazy" width="1052" height="261"><figcaption><span lang="en">Café Expresso, Joinville. Today: Pavão Lanchonete e Pizzaria.</span><span lang="pt">Café Expresso, Joinville. Hoje: Pavão Lanchonete e Pizzaria.</span></figcaption></figure>
   </div>
 </section>
 
