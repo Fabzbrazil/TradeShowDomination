@@ -221,6 +221,9 @@ h1,h2,h3,.logo,.strip-num,.aud-num,.step-num,.show-card-title,.btn { font-family
   .floor-cap { font-size:13px; left:12px; right:12px; bottom:12px; text-align:center; }
   .hero-badge { left:0; bottom:0; padding:12px 14px; } .hero-badge img { height:36px; }
 }
+.strip-grid.two { grid-template-columns:1fr 1fr; max-width:820px; margin:0 auto; text-align:center; }
+.solo { max-width:640px; margin:0 auto; }
+@media (max-width:768px){ .strip-grid.two { grid-template-columns:1fr 1fr; gap:20px; } }
 </style>
 </head>
 <body>
@@ -233,6 +236,7 @@ h1,h2,h3,.logo,.strip-num,.aud-num,.step-num,.show-card-title,.btn { font-family
   <div class="container nav-inner">
     <div class="brand"><a href="index.html" class="logo">Fabio<span>Cesar</span></a><span class="nav-sep"></span><img src="img/brasil/show-logo-navy.svg" class="nav-show-logo" alt="National Restaurant Association Show"></div>
     <div class="nav-links">
+      <a href="about.html?lang=pt">Minha história</a>
       <a href="#quem">Quem você conhece</a>
       <a href="#oportunidades">Oportunidades</a>
       <a href="#conversa" class="btn btn-primary">Agendar conversa</a>
@@ -264,19 +268,16 @@ h1,h2,h3,.logo,.strip-num,.aud-num,.step-num,.show-card-title,.btn { font-family
 
 <section class="stat-strip">
   <div class="container">
-    <div class="strip-grid">
+    <div class="strip-grid two">
       <div class="strip-item"><span class="strip-num">55.000+</span><span class="strip-label">profissionais de food service dos EUA e do mundo</span></div>
       <div class="strip-item"><span class="strip-num">90%</span><span class="strip-label">dos visitantes influenciam decisões de compra</span></div>
-      <div class="strip-item"><span class="strip-num">61%</span><span class="strip-label">são diretores ou cargos acima</span></div>
-      <div class="strip-item"><span class="strip-num">50%</span><span class="strip-label">vêm de operações com mais de US$ 5 milhões em vendas anuais</span></div>
     </div>
   </div>
 </section>
 
 <section class="block connector">
   <div class="container">
-    <div class="split">
-      <div class="split-photo"><img src="img/brasil/networking.jpg" alt="Profissionais de food service conversando no Show" loading="lazy" width="1200" height="800"></div>
+    <div class="solo">
       <div class="show-card">
         <div class="show-card-label">O que eu faço por você</div>
         <div class="show-card-title">Conexão, não só estande</div>
@@ -487,7 +488,7 @@ h1,h2,h3,.logo,.strip-num,.aud-num,.step-num,.show-card-title,.btn { font-family
       <a href="https://www.tiktok.com/@fabioimportsbrazil" target="_blank" rel="noopener" title="TikTok">🎵</a>
     </div>
     <div class="footer-bottom">
-      &copy; 2026 Fabio Cesar · <a href="index.html">Tradeshow ROI Playbook (EN)</a> · <a href="methodology.html">Metodologia (EN)</a>
+      &copy; 2026 Fabio Cesar · <a href="about.html?lang=pt">Minha história</a> · <a href="index.html">Tradeshow ROI Playbook (EN)</a> · <a href="methodology.html">Metodologia (EN)</a>
     </div>
   </div>
 </footer>
