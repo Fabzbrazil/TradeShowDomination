@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fabio Cesar | Empresas brasileiras no National Restaurant Show</title>
-<meta name="description" content="Ajudo empresas brasileiras a chegar aos compradores do food service dos EUA pelo National Restaurant Show, em Chicago. Conversa em português.">
+<title>Fabio Cesar | Conexões no food service dos EUA para empresas brasileiras</title>
+<meta name="description" content="Fabio Cesar conecta empresas brasileiras aos decisores do food service dos EUA no National Restaurant Show, em Chicago. Conversa em português.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
-<meta property="og:title" content="A porta de entrada do food service americano">
-<meta property="og:description" content="Fabio Cesar, brasileiro no time do National Restaurant Show em Chicago. 55.000+ profissionais, 98 das 100 maiores redes dos EUA. Conversa em português.">
+<meta property="og:title" content="Eu conecto sua empresa a quem decide nos EUA">
+<meta property="og:description" content="Fabio Cesar, brasileiro no time do National Restaurant Show em Chicago. Redes, distribuidores e varejistas do food service americano. Conversa em português.">
 <meta property="og:url" content="https://fabioimportsbrazil.netlify.app/brasil">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -642,6 +642,34 @@ body {
   .show-row { font-size:14px; }
   .hero-ctas .btn { width:100%; text-align:center; }
 }
+
+.do-item { display:flex; gap:16px; padding:16px 0; border-bottom:1px solid rgba(255,255,255,0.06); }
+.do-item:last-of-type { border-bottom:none; }
+.do-num { color:#FF6B35; font-weight:800; font-size:14px; letter-spacing:1px; padding-top:2px; }
+.do-item strong { display:block; font-size:16px; margin-bottom:4px; }
+.do-item p { font-size:14px; color:rgba(255,255,255,0.6); line-height:1.55; }
+.show-foot { margin-top:20px; padding-top:16px; border-top:1px solid rgba(255,107,53,0.25); font-size:13px; color:rgba(255,255,255,0.5); }
+.aud-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:20px; }
+.aud { background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius:16px; padding:28px; }
+.aud-wide { grid-column:1 / -1; border-color:rgba(255,107,53,0.35); }
+.aud-num { display:block; color:#FF6B35; font-weight:900; font-size:36px; letter-spacing:-1px; line-height:1; margin-bottom:12px; }
+.aud h3 { font-size:20px; font-weight:700; margin-bottom:4px; }
+.aud-sub { font-size:14px; color:rgba(255,255,255,0.55); margin-bottom:14px; }
+.aud-names { font-size:14px; color:rgba(255,255,255,0.8); line-height:1.7; }
+.fine { margin-top:24px; font-size:12px; color:rgba(255,255,255,0.4); text-align:center; }
+.opp-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+.opp { background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius:16px; padding:28px; display:flex; flex-direction:column; }
+.opp-tag { align-self:flex-start; font-size:11px; font-weight:700; letter-spacing:1.2px; text-transform:uppercase; color:#FF6B35; background:rgba(255,107,53,0.1); border:1px solid rgba(255,107,53,0.3); border-radius:999px; padding:4px 12px; margin-bottom:16px; }
+.opp h3 { font-size:20px; font-weight:800; letter-spacing:-0.3px; margin-bottom:10px; }
+.opp p { font-size:15px; color:rgba(255,255,255,0.65); line-height:1.6; margin-bottom:16px; }
+.opp ul { list-style:none; margin-top:auto; display:flex; flex-direction:column; gap:8px; }
+.opp li { font-size:14px; color:rgba(255,255,255,0.85); padding-left:18px; position:relative; }
+.opp li::before { content:"→"; position:absolute; left:0; color:#FF6B35; }
+.opp-cta { background:rgba(255,107,53,0.08); border-color:rgba(255,107,53,0.4); justify-content:center; }
+.opp-cta .btn { align-self:flex-start; }
+.steps-4 { grid-template-columns:repeat(4,1fr); }
+@media (max-width: 1024px) { .opp-grid { grid-template-columns:1fr 1fr; } .steps-4 { grid-template-columns:1fr 1fr; } }
+@media (max-width: 768px) { .opp-grid, .aud-grid, .steps-4 { grid-template-columns:1fr; } }
 </style>
 </head>
 <body>
@@ -650,8 +678,8 @@ body {
   <div class="container nav-inner">
     <a href="index.html" class="logo">Fabio<span>Cesar</span></a>
     <div class="nav-links">
-      <a href="#numeros">Os números</a>
-      <a href="#metodo">Como trabalho</a>
+      <a href="#quem">Quem você conhece</a>
+      <a href="#oportunidades">Oportunidades</a>
       <a href="#conversa" class="btn btn-primary">Agendar conversa</a>
     </div>
   </div>
@@ -661,72 +689,125 @@ body {
   <div class="container">
     <div class="hero-grid">
       <div class="hero-content">
-        <span class="eyebrow">Para empresas brasileiras · National Restaurant Show 2027</span>
-        <h1>A porta de entrada do food service <span class="highlight">americano.</span></h1>
-        <p class="hero-sub">Sou brasileiro e trabalho em Chicago, no time do National Restaurant Show. Ajudo empresas brasileiras a chegar aos compradores do food service dos Estados Unidos com uma estratégia de 12 meses, e não apenas com um estande.</p>
+        <span class="eyebrow">Para empresas brasileiras de food service</span>
+        <h1>Eu conecto sua empresa a quem decide nos <span class="highlight">EUA.</span></h1>
+        <p class="hero-sub">Sou brasileiro, trabalho em Chicago dentro do time do National Restaurant Show e sou o representante do Show dedicado ao Brasil. Eu levo empresas brasileiras até os compradores, redes e distribuidores do food service americano. O Show é onde essas conexões acontecem.</p>
         <div class="hero-ctas">
           <a href="#conversa" class="btn btn-primary btn-lg btn-arrow">Agendar uma conversa</a>
-          <a href="#numeros" class="btn btn-ghost btn-lg">Ver os números</a>
+          <a href="#oportunidades" class="btn btn-ghost btn-lg">Ver as oportunidades</a>
         </div>
         <p class="tagline">Nascido no Brasil. Construído em Chicago.</p>
       </div>
       <div class="show-card">
-        <div class="show-card-label">O Show em 2027</div>
-        <div class="show-card-title">National Restaurant Show</div>
-        <div class="show-row"><span>Edição</span><strong>106ª</strong></div>
-        <div class="show-row"><span>Datas</span><strong>22 a 25 de maio de 2027</strong></div>
-        <div class="show-row"><span>Local</span><strong>McCormick Place, Chicago</strong></div>
-        <div class="show-row"><span>Público em 2026</span><strong>55.000+ profissionais</strong></div>
-        <div class="show-row"><span>Organizações</span><strong>15.000+</strong></div>
-        <div class="show-row"><span>Expositores</span><strong>~2.300 empresas</strong></div>
-        <div class="show-row"><span>Estande a partir de</span><strong>US$ 5.700 (100 pés² · ~9 m²)</strong></div>
+        <div class="show-card-label">O que eu faço por você</div>
+        <div class="show-card-title">Conexão, não só estande</div>
+        <div class="do-item"><span class="do-num">01</span><div><strong>Abro as portas certas</strong><p>Identifico quais redes, distribuidores e varejistas fazem sentido para o seu produto e coloco você na frente deles.</p></div></div>
+        <div class="do-item"><span class="do-num">02</span><div><strong>Indico você para as vitrines do Show</strong><p>Prêmios, palco e programas com vagas limitadas, para as empresas com o fit certo.</p></div></div>
+        <div class="do-item"><span class="do-num">03</span><div><strong>Acompanho em português</strong><p>Do primeiro contato ao pós-Show, com um plano de 12 meses e não de quatro dias.</p></div></div>
+        <div class="show-foot">22 a 25 de maio de 2027 · McCormick Place, Chicago</div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="stat-strip" id="numeros">
+<section class="stat-strip">
   <div class="container">
     <div class="strip-grid">
-      <div class="strip-item"><span class="strip-num">90%</span><span class="strip-label">dos visitantes decidem ou influenciam compras</span></div>
-      <div class="strip-item"><span class="strip-num">98 de 100</span><span class="strip-label">maiores redes de restaurantes dos EUA estiveram no Show de 2026</span></div>
-      <div class="strip-item"><span class="strip-num">40%+</span><span class="strip-label">dos visitantes não vão a nenhum outro evento do setor</span></div>
-      <div class="strip-item"><span class="strip-num">112</span><span class="strip-label">países representados entre os visitantes</span></div>
+      <div class="strip-item"><span class="strip-num">55.000+</span><span class="strip-label">profissionais de food service dos EUA e do mundo</span></div>
+      <div class="strip-item"><span class="strip-num">90%</span><span class="strip-label">dos visitantes influenciam decisões de compra</span></div>
+      <div class="strip-item"><span class="strip-num">61%</span><span class="strip-label">são diretores ou cargos acima</span></div>
+      <div class="strip-item"><span class="strip-num">50%</span><span class="strip-label">vêm de operações com mais de US$ 5 milhões em vendas anuais</span></div>
     </div>
   </div>
 </section>
 
-<section class="block">
-  <div class="container narrow">
-    <span class="eyebrow">Já é um mercado internacional</span>
-    <h2>Sua empresa não seria a primeira a <span class="highlight">vir de fora.</span></h2>
-    <p class="lead">Em 2026, o Show recebeu <strong>580 expositores internacionais de 44 países</strong> e mais de <strong>880 empresas exportadoras</strong>. O comprador americano que circula pelo pavilhão já espera encontrar fornecedores do mundo inteiro. A pergunta não é se o mercado está aberto. É se a sua empresa vai chegar preparada.</p>
-  </div>
-</section>
-
-<section class="block">
+<section class="block" id="quem">
   <div class="container">
     <div class="center-head">
-      <span class="eyebrow">Quem está no pavilhão</span>
-      <h2>Todos os compradores do food service, <span class="highlight">em quatro dias.</span></h2>
-      <p class="lead">A maioria do público é de nível C, presidentes e VPs com poder de decisão. Divisão por segmento, conforme os dados publicados pelo próprio Show:</p>
+      <span class="eyebrow">Quem você vai conhecer</span>
+      <h2>A indústria inteira, <span class="highlight">em um só lugar.</span></h2>
+      <p class="lead">O maior encontro anual de profissionais de food service do Hemisfério Ocidental. Estes são os compradores que circulam pelo Show, e as empresas que eles representam:</p>
     </div>
-    <div class="segment-grid">
-      <div class="segment"><span class="seg-pct">32%</span><h3>Restaurantes independentes</h3><p>~11.500 visitantes</p></div>
-      <div class="segment"><span class="seg-pct">24%</span><h3>Redes de restaurantes</h3><p>~8.600 · McDonald's, Starbucks, Chipotle</p></div>
-      <div class="segment"><span class="seg-pct">22%</span><h3>Institucional</h3><p>~7.900 · Aramark, Compass, Sodexo, universidades</p></div>
-      <div class="segment"><span class="seg-pct">16%</span><h3>Distribuidores</h3><p>~5.700 · Sysco, US Foods, TriMark</p></div>
-      <div class="segment"><span class="seg-pct">3%</span><h3>Hotelaria e cruzeiros</h3><p>~1.000 · Marriott, Hyatt, Royal Caribbean</p></div>
-      <div class="segment"><span class="seg-pct">3%</span><h3>Varejo</h3><p>~1.000 · Costco, Publix, Walmart</p></div>
+    <div class="aud-grid">
+      <div class="aud aud-wide">
+        <span class="aud-num">16.000–20.000</span>
+        <h3>Operadores de restaurantes</h3>
+        <p class="aud-sub">Redes e independentes</p>
+        <p class="aud-names">McDonald's · Starbucks · Darden · Chipotle · Buffalo Wild Wings · Jimmy John's · Taco Bell · Wendy's · Yum! Brands · Frontera Grill · Gibsons Restaurant Group</p>
+      </div>
+      <div class="aud">
+        <span class="aud-num">6.000–8.000</span>
+        <h3>Distribuidores e revendas</h3>
+        <p class="aud-sub">Quem leva o seu produto até milhares de cozinhas</p>
+        <p class="aud-names">Sysco · US Foods · Gordon Food Service · TriMark · Boelter · Stafford-Smith</p>
+      </div>
+      <div class="aud">
+        <span class="aud-num">6.000–8.000</span>
+        <h3>Institucional</h3>
+        <p class="aud-sub">Universidades, hospitais, aeroportos, forças armadas</p>
+        <p class="aud-names">Aramark · Compass · Sodexo · Delaware North · Cornell · Ohio State · US Army · US Navy</p>
+      </div>
+      <div class="aud">
+        <span class="aud-num">~2.000</span>
+        <h3>Varejo e conveniência</h3>
+        <p class="aud-sub">Supermercados, clubes de compra e lojas de conveniência</p>
+        <p class="aud-names">Costco · Walmart · Whole Foods · Publix · 7-Eleven · H-E-B · Wawa · Sheetz · Buc-ee's</p>
+      </div>
+      <div class="aud">
+        <span class="aud-num">1.000–2.000</span>
+        <h3>Hotelaria e cruzeiros</h3>
+        <p class="aud-sub">Redes hoteleiras, resorts e companhias de cruzeiro</p>
+        <p class="aud-names">Marriott · Hilton · Hyatt · Four Seasons · Ritz-Carlton · Carnival · Disney Cruise Line</p>
+      </div>
     </div>
+    <p class="fine">Faixas de público e empresas representadas em edições recentes, conforme dados do próprio Show. A presença em anos anteriores não garante a participação de cada empresa em 2027.</p>
   </div>
 </section>
 
-<section class="block">
-  <div class="container narrow">
-    <span class="eyebrow">A comparação certa</span>
-    <h2>Isso não é uma decisão de feira. É uma decisão de <span class="highlight">exportação.</span></h2>
-    <p class="lead">Uma empresa brasileira que quer vender nos EUA não está comparando o National Restaurant Show com outra feira. Está comparando com abrir um escritório de vendas, contratar um broker ou não fazer nada. Em quatro dias, o Show coloca sua empresa diante de redes, distribuidores e operadores que levariam anos para alcançar um por um. A minha função é garantir que esses quatro dias rendam o ano inteiro.</p>
+<section class="block" id="oportunidades">
+  <div class="container">
+    <div class="center-head">
+      <span class="eyebrow">O que eu posso abrir para você</span>
+      <h2>Vitrines que colocam seu produto <span class="highlight">na frente de quem decide.</span></h2>
+      <p class="lead">As oportunidades abaixo têm vagas limitadas e são selecionadas. Para empresas brasileiras, a porta de entrada sou eu: avalio o fit do seu produto e, se fizer sentido, conduzo sua empresa do início ao fim.</p>
+    </div>
+    <div class="opp-grid">
+      <div class="opp">
+        <span class="opp-tag">Prêmio</span>
+        <h3>FABI Awards</h3>
+        <p>O prêmio de alimentos e bebidas do Show, que chega à 15ª edição em 2027. Os produtos são avaliados por um painel de jurados que inclui executivos de culinária da Wendy's, Aramark, California Pizza Kitchen, Levy Restaurants, Bloomin' Brands e Ohio State.</p>
+        <ul><li>Média de ~250 leads de visitantes na área de degustação</li><li>Inscrições fecham em meados de janeiro, vencedores anunciados em março</li></ul>
+      </div>
+      <div class="opp">
+        <span class="opp-tag">Palco</span>
+        <h3>Do varejo ao food service</h3>
+        <p>Sessão no Discovery Theater, sábado, 22 de maio, das 13h às 14h, com apenas 5 empresas parceiras apresentando produtos de alimentos e bebidas que estão entrando no food service.</p>
+        <ul><li>5 minutos de palco, com slides ou vídeo</li><li>30 minutos de mesa, frente a frente com a plateia</li><li>Contato de todos os presentes na sessão</li></ul>
+      </div>
+      <div class="opp">
+        <span class="opp-tag">Acesso exclusivo</span>
+        <h3>Bootcamps para operadores</h3>
+        <p>Workshops fechados, abertos só a operadores, como o Retail Foodservice Bootcamp e o LTO Excellence Bootcamp, na segunda-feira, 24 de maio. Como patrocinador, sua empresa entra na sala.</p>
+        <ul><li>Um porta-voz seu participa do bootcamp</li><li>5 ingressos para sua equipe e clientes</li><li>Lista de participantes com nome, cargo, empresa e e-mail</li></ul>
+      </div>
+      <div class="opp">
+        <span class="opp-tag">Novo em 2027</span>
+        <h3>Retail Global Food and Beverage Marketplace</h3>
+        <p>Um espaço novo, dedicado a fabricantes e fornecedores internacionais, dentro do Global Food Expo. Feito para apresentar seu produto a compradores de restaurantes, supermercados, conveniência e hotéis, e aos distribuidores que atendem esses canais.</p>
+        <ul><li>Bebidas, snacks, doces, refeições prontas, molhos e marca própria</li><li>Degustação e demonstração no estande</li></ul>
+      </div>
+      <div class="opp">
+        <span class="opp-tag">Tecnologia e equipamentos</span>
+        <h3>Restaurante funcionando no pavilhão</h3>
+        <p>Uma experiência completa no Tech Pavilion: o visitante pede num cardápio com IA, acompanha a cozinha e retira a comida, como os próprios clientes dele. Para empresas de equipamentos, tecnologia e serviços.</p>
+        <ul><li>Previsão de 10.000 pessoas passando pela experiência</li><li>Frente e fundo de loja, drive-thru, conveniência e retaguarda</li></ul>
+      </div>
+      <div class="opp opp-cta">
+        <h3>Qual delas é para você?</h3>
+        <p>Depende do seu produto, do canal que você quer nos EUA e do seu momento de exportação. Essa é a primeira coisa que definimos juntos.</p>
+        <a href="#conversa" class="btn btn-primary btn-arrow">Descobrir o meu fit</a>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -734,15 +815,13 @@ body {
   <div class="container">
     <div class="center-head">
       <span class="eyebrow">Como trabalho</span>
-      <h2>O estande é a parte <span class="highlight">mais barata.</span></h2>
-      <p class="lead">Uma feira não é um evento de quatro dias. É um sistema de 12 meses. É assim que eu estruturo o trabalho com cada empresa:</p>
+      <h2>O Show dura quatro dias. <span class="highlight">A conexão, o ano inteiro.</span></h2>
     </div>
-    <div class="steps">
-      <div class="step"><span class="step-num">01</span><h3>Avaliação</h3><p>Antes de qualquer contrato: o Show faz sentido para o seu produto, a sua capacidade de exportação e o seu objetivo nos EUA? Se não fizer, eu digo.</p></div>
-      <div class="step"><span class="step-num">02</span><h3>Estratégia e orçamento</h3><p>A regra 20/45/35: 20% no estande, 45% na operação e 35% em vendas e marketing. A maioria das empresas inverte essa conta e paga caro por isso.</p></div>
-      <div class="step"><span class="step-num">03</span><h3>Pré-Show</h3><p>Definir quem precisa visitar seu estande (redes, distribuidores, importadores) e chegar a Chicago com reuniões, não com esperança.</p></div>
-      <div class="step"><span class="step-num">04</span><h3>No pavilhão</h3><p>Equipe, demonstração e captura de leads pensadas para o comprador americano, que decide rápido e compara tudo.</p></div>
-      <div class="step"><span class="step-num">05</span><h3>Regra das 48 horas</h3><p>O padrão do setor é retomar o contato em 10 dias úteis. Nós retomamos em 48 horas, enquanto o comprador ainda lembra de você.</p></div>
+    <div class="steps steps-4">
+      <div class="step"><span class="step-num">01</span><h3>Fit</h3><p>Entendo seu produto, sua capacidade de exportação e o canal que você quer nos EUA. Se não for o momento, eu digo.</p></div>
+      <div class="step"><span class="step-num">02</span><h3>Quem você precisa conhecer</h3><p>Mapeamos as redes, distribuidores e varejistas certos e escolhemos as vitrines que colocam você na frente deles.</p></div>
+      <div class="step"><span class="step-num">03</span><h3>Chegar com agenda</h3><p>Antes de Chicago, os compradores já sabem que você vai estar lá. Você chega com reuniões, não com esperança.</p></div>
+      <div class="step"><span class="step-num">04</span><h3>Regra das 48 horas</h3><p>O padrão do setor é retomar o contato em 10 dias úteis. Nós retomamos em 48 horas, enquanto o comprador ainda lembra de você.</p></div>
     </div>
   </div>
 </section>
@@ -750,10 +829,10 @@ body {
 <section class="about-mini">
   <div class="container">
     <div class="about-mini-content">
-      <span class="eyebrow">Quem sou</span>
-      <h2>Fabio Cesar. Brasileiro, baseado em Chicago, dentro do time do Show.</h2>
-      <p>Sou consultor no time do National Restaurant Show, que é produzido pela Informa. Atendo algumas das contas mais importantes do Show nos Estados Unidos: os expositores mais antigos e as empresas com maior potencial de crescimento.</p>
-      <p>Estou construindo o território Brasil do zero e passo três meses por ano no país, atendendo empresas pessoalmente. A conversa acontece em português, do primeiro contato até o pavilhão, <strong style="color:#fff;">e eu conheço os dois lados: como a empresa brasileira decide e como o comprador americano compra.</strong></p>
+      <span class="eyebrow">Por que comigo</span>
+      <h2>Um brasileiro dentro do time do Show.</h2>
+      <p>Sou consultor no time do National Restaurant Show, produzido pela Informa, e atendo algumas das contas mais importantes do Show nos Estados Unidos. Também sou o representante dedicado ao Brasil: estou construindo esse território do zero e passo três meses por ano no país, atendendo empresas pessoalmente.</p>
+      <p>Isso significa que eu conheço os dois lados. <strong style="color:#fff;">Sei como a empresa brasileira decide e sei como o comprador americano compra.</strong> E, para as vitrines do Show, sou eu quem indica e conduz as empresas brasileiras com o fit certo. Toda a conversa acontece em português.</p>
     </div>
   </div>
 </section>
@@ -768,7 +847,7 @@ body {
         <ul class="qualifier-list">
           <li><span class="qualifier-icon icon-yes">✓</span>Fabrica alimentos, bebidas, equipamentos ou tecnologia para food service</li>
           <li><span class="qualifier-icon icon-yes">✓</span>Já exporta, ou tem capacidade e certificações para começar</li>
-          <li><span class="qualifier-icon icon-yes">✓</span>Quer redes, distribuidores ou importadores nos EUA, não só visibilidade</li>
+          <li><span class="qualifier-icon icon-yes">✓</span>Quer relacionamento com redes, distribuidores ou varejistas nos EUA</li>
           <li><span class="qualifier-icon icon-yes">✓</span>Está disposta a tratar os EUA como um projeto de 12 meses</li>
         </ul>
       </div>
@@ -776,7 +855,7 @@ body {
         <h3>Ainda não é o momento se você</h3>
         <ul class="qualifier-list">
           <li><span class="qualifier-icon icon-no">✕</span>Não consegue atender pedidos nos EUA nos próximos 12 a 18 meses</li>
-          <li><span class="qualifier-icon icon-no">✕</span>Procura só um estande, sem plano para antes e depois do Show</li>
+          <li><span class="qualifier-icon icon-no">✕</span>Procura só visibilidade, sem plano para antes e depois do Show</li>
           <li><span class="qualifier-icon icon-no">✕</span>Espera fechar contratos em quatro dias sem acompanhamento</li>
           <li><span class="qualifier-icon icon-no">✕</span>Não tem ninguém para dar continuidade aos contatos depois do Show</li>
         </ul>
@@ -790,22 +869,21 @@ body {
     <div class="faq-content">
       <div class="faq-eyebrow"><span class="eyebrow">Perguntas frequentes</span></div>
       <h2>O que você provavelmente <span class="highlight">está pensando.</span></h2>
-
       <div class="faq-item">
-        <div class="faq-question">Quanto custa expor?</div>
-        <div class="faq-answer">Em 2027, os estandes começam em US$ 5.700 para 100 pés² (cerca de 9 m²). Mas o estande é a menor parte do investimento: pela regra 20/45/35, ele deve representar cerca de 20% do orçamento total. Na nossa conversa, montamos esse orçamento completo com você.</div>
+        <div class="faq-question">O que significa ter o "fit certo"?</div>
+        <div class="faq-answer">Que o seu produto resolve um problema real de um comprador americano e que a sua empresa tem condições de atender esse comprador depois do Show. As vitrines têm vagas limitadas. Indico apenas as empresas que vão aproveitá-las.</div>
       </div>
       <div class="faq-item">
         <div class="faq-question">Ainda não temos distribuidor nos EUA. Faz sentido?</div>
-        <div class="faq-answer">Muitas vezes é exatamente por isso que faz sentido. Cerca de 16% do público, ou ~5.700 pessoas, vem de distribuidores, incluindo Sysco, US Foods e TriMark. Poucos lugares reúnem tantos compradores desse canal no mesmo pavilhão.</div>
+        <div class="faq-answer">Muitas vezes é exatamente por isso que faz sentido. Entre 6.000 e 8.000 visitantes vêm de distribuidores e revendas, incluindo Sysco, US Foods e Gordon Food Service. Poucos lugares reúnem tantos compradores desse canal no mesmo lugar.</div>
       </div>
       <div class="faq-item">
         <div class="faq-question">Preciso falar inglês para começar?</div>
-        <div class="faq-answer">Não. Toda a nossa conversa, do planejamento ao pós-Show, pode ser em português. No pavilhão, vamos planejar juntos quem da sua equipe vai atender os compradores americanos.</div>
+        <div class="faq-answer">Não. Toda a nossa conversa, do planejamento ao pós-Show, pode ser em português. Para os encontros com compradores americanos, planejamos juntos quem da sua equipe vai conduzir cada conversa.</div>
       </div>
       <div class="faq-item">
         <div class="faq-question">Como é a primeira conversa?</div>
-        <div class="faq-answer">São 30 minutos, em português. Entendo o seu produto, a sua situação de exportação e o seu objetivo nos EUA, e digo honestamente se o Show é o próximo passo certo para a sua empresa. Se não for, você sai da conversa sabendo por quê.</div>
+        <div class="faq-answer">São 30 minutos, em português. Entendo o seu produto, a sua situação de exportação e o seu objetivo nos EUA, e digo honestamente quais conexões e vitrines fazem sentido para você. Se nenhuma fizer, você sai da conversa sabendo por quê.</div>
       </div>
     </div>
   </div>
@@ -814,16 +892,16 @@ body {
 <section class="final-cta" id="conversa">
   <div class="container narrow center">
     <span class="eyebrow">Próximo passo</span>
-    <h2>Vamos conversar sobre os <span class="highlight">EUA.</span></h2>
+    <h2>Vamos ver quem você precisa <span class="highlight">conhecer.</span></h2>
     <p class="lead">Escolha o horário que funciona melhor na sua agenda. A conversa é em português.</p>
-    <a href="https://bookings.cloud.microsoft/bookwithme/user/af158eaba657485a98766316ff46ddca@informa.com?anonymous&amp;ismsaljsauthenabled&amp;ep=pcard" target="_blank" rel="noopener" class="btn btn-primary btn-lg btn-arrow">Agendar uma conversa</a>
+    <a href="https://bookings.cloud.microsoft/bookwithme/user/af158eaba657485a98766316ff46ddca@informa.com/meetingtype/49tsrIvCIEGmzfsbk_gGIA2?anonymous&amp;ismsaljsauthenabled&amp;ep=mCardFromTile" target="_blank" rel="noopener" class="btn btn-primary btn-lg btn-arrow">Agendar uma conversa</a>
     <p class="cta-alt">Prefere e-mail? <a href="mailto:fabio.cesar@informa.com">fabio.cesar@informa.com</a></p>
   </div>
 </section>
 
 <footer class="footer">
   <div class="container">
-    <p class="footer-tag">Números de 2026 publicados pelo <a href="https://www.nationalrestaurantshow.com/" target="_blank" rel="noopener">National Restaurant Show</a>.</p>
+    <p class="footer-tag">Dados de público publicados pelo <a href="https://www.nationalrestaurantshow.com/" target="_blank" rel="noopener">National Restaurant Show</a>.</p>
     <div class="social-icons">
       <a href="https://www.linkedin.com/in/fabiocesarjr/" target="_blank" rel="noopener" title="LinkedIn">in</a>
       <a href="https://fabioimportsbrazil.substack.com" target="_blank" rel="noopener" title="Substack">✎</a>
