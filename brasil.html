@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fabio Cesar | Empresas brasileiras no National Restaurant Show</title>
+<meta name="description" content="Ajudo empresas brasileiras a chegar aos compradores do food service dos EUA pelo National Restaurant Show, em Chicago. Conversa em português.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="A porta de entrada do food service americano">
+<meta property="og:description" content="Fabio Cesar, brasileiro no time do National Restaurant Show em Chicago. 55.000+ profissionais, 98 das 100 maiores redes dos EUA. Conversa em português.">
+<meta property="og:url" content="https://fabioimportsbrazil.netlify.app/brasil">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #000;
+  color: #fff;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+.highlight {
+  color: #FF6B35;
+  position: relative;
+  display: inline-block;
+}
+.eyebrow {
+  display: inline-block;
+  color: #FF6B35;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+.eyebrow::before {
+  content: "• ";
+  margin-right: 4px;
+}
+.btn {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+}
+.btn-primary {
+  background: #FF6B35;
+  color: #fff;
+}
+.btn-primary:hover { background: #ff8255; }
+.btn-secondary {
+  background: rgba(255, 107, 53, 0.1);
+  color: #FF6B35;
+  border: 1px solid rgba(255, 107, 53, 0.4);
+}
+.btn-secondary:hover {
+  background: rgba(255, 107, 53, 0.2);
+  border-color: #FF6B35;
+}
+.btn-ghost {
+  background: transparent;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.btn-ghost:hover { border-color: rgba(255, 255, 255, 0.5); }
+.btn-lg { padding: 18px 36px; font-size: 16px; }
+.btn-full { width: 100%; text-align: center; }
+.btn-arrow::after {
+  content: " →";
+  margin-left: 4px;
+}
+
+.nav {
+  padding: 24px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+.nav-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-weight: 800;
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: -0.3px;
+}
+.logo span { color: #FF6B35; }
+.nav-links {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.nav-links a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.nav-links a:hover { color: #fff; }
+
+.hero {
+  padding: 80px 0 60px;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: -200px;
+  right: -200px;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(255, 107, 53, 0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  position: relative;
+}
+.hero h1 {
+  font-size: clamp(48px, 6vw, 80px);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -2px;
+  margin-bottom: 32px;
+}
+.hero h1 .highlight {
+  border-bottom: 4px solid #FF6B35;
+  padding-bottom: 4px;
+}
+.hero-sub {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 40px;
+  max-width: 500px;
+  line-height: 1.6;
+}
+.hero-stats {
+  display: flex;
+  gap: 48px;
+  margin-top: 48px;
+  flex-wrap: wrap;
+}
+.hero-stat .stat-num {
+  display: block;
+  font-size: 28px;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 6px;
+}
+.hero-stat .stat-label {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.5);
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+.tracker-preview {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 32px;
+  position: relative;
+}
+.tracker-preview::before {
+  content: "STRATEGIC PLAYBOOK · 7 SECTIONS";
+  position: absolute;
+  top: -12px;
+  left: 24px;
+  background: #FF6B35;
+  color: #fff;
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.tracker-preview-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  margin-bottom: 16px;
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.4);
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+.tracker-page-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+.tracker-page-row:last-child { border-bottom: none; }
+.tracker-page-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+.tracker-page-num {
+  font-size: 11px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.4);
+  width: 20px;
+}
+.tracker-page-name {
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+}
+.tracker-page-status {
+  font-size: 11px;
+  font-weight: 600;
+  color: #FF6B35;
+  letter-spacing: 0.3px;
+  text-align: right;
+  line-height: 1.3;
+}
+.tracker-page-row.highlight-row {
+  background: rgba(255, 107, 53, 0.05);
+  margin: 0 -16px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 107, 53, 0.2);
+}
+
+.form-section {
+  padding: 80px 0;
+  background: linear-gradient(180deg, transparent 0%, rgba(255, 107, 53, 0.02) 100%);
+}
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+.form-content h2 {
+  font-size: clamp(36px, 4vw, 52px);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -1.5px;
+  margin-bottom: 24px;
+}
+.form-content p {
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 32px;
+}
+.objection-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.objection-item {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+.objection-check {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  background: #FF6B35;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  margin-top: 2px;
+}
+.objection-text strong {
+  display: block;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+.objection-text span {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.form-wrapper {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 40px;
+}
+.form-wrapper h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.form-wrapper .form-subtitle {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  margin-bottom: 28px;
+}
+.form-group { margin-bottom: 16px; }
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 14px 18px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  color: #fff;
+  font-family: inherit;
+  font-size: 15px;
+  transition: all 0.2s;
+}
+.form-group input::placeholder { color: rgba(255, 255, 255, 0.4); }
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #FF6B35;
+  background: rgba(255, 255, 255, 0.08);
+}
+.form-group select {
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8' fill='none'%3E%3Cpath d='M1 1.5L6 6.5L11 1.5' stroke='%23FF6B35' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 18px center;
+  padding-right: 44px;
+}
+.form-group select option { background: #1a1a1a; color: #fff; }
+.form-note {
+  text-align: center;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 16px;
+}
+.hidden-honeypot { display: none; }
+
+.qualifier {
+  padding: 100px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  text-align: center;
+}
+.qualifier-eyebrow {
+  display: inline-block;
+  color: #FF6B35;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+.qualifier h2 {
+  font-size: clamp(32px, 4vw, 48px);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -1.5px;
+  margin-bottom: 48px;
+}
+.qualifier-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left;
+}
+.qualifier-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 32px;
+}
+.qualifier-card h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 24px;
+}
+.qualifier-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.qualifier-list li {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.7);
+}
+.qualifier-icon {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 12px;
+  margin-top: 1px;
+}
+.icon-yes {
+  background: #FF6B35;
+  color: #fff;
+}
+.icon-no {
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.about-mini {
+  padding: 80px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+.about-mini-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+.about-mini h2 {
+  font-size: clamp(28px, 3vw, 36px);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -1px;
+  margin-bottom: 24px;
+}
+.about-mini p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 17px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+.about-mini-cta {
+  margin-top: 32px;
+}
+
+.faq {
+  padding: 100px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+.faq-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.faq-eyebrow {
+  text-align: center;
+  margin-bottom: 24px;
+}
+.faq h2 {
+  font-size: clamp(32px, 4vw, 48px);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -1.5px;
+  margin-bottom: 56px;
+  text-align: center;
+}
+.faq-item {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+.faq-question {
+  padding: 24px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  font-size: 16px;
+  color: #fff;
+  user-select: none;
+}
+.faq-question::after {
+  content: "+";
+  color: #FF6B35;
+  font-size: 24px;
+  font-weight: 400;
+  transition: transform 0.2s;
+}
+.faq-item.active .faq-question::after {
+  content: "−";
+}
+.faq-answer {
+  padding: 0 24px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 15px;
+  line-height: 1.6;
+}
+.faq-item.active .faq-answer {
+  padding: 0 24px 24px;
+  max-height: 400px;
+}
+
+.footer {
+  padding: 60px 0 32px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  text-align: center;
+}
+.footer-tag {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  margin-bottom: 32px;
+}
+.footer-tag a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: underline;
+}
+.social-icons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+.social-icons a {
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: all 0.2s;
+}
+.social-icons a:hover {
+  background: rgba(255, 107, 53, 0.1);
+  border-color: #FF6B35;
+  color: #FF6B35;
+}
+.footer-bottom {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.3);
+}
+.footer-bottom a {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  margin: 0 12px;
+}
+
+
+.hero-ctas { display:flex; gap:16px; flex-wrap:wrap; }
+.tagline { margin-top:32px; font-size:14px; font-weight:600; letter-spacing:1px; text-transform:uppercase; color:rgba(255,255,255,0.45); }
+.show-card { background:rgba(255,255,255,0.03); border:1px solid rgba(255,107,53,0.3); border-radius:20px; padding:36px; box-shadow:0 0 80px rgba(255,107,53,0.08); }
+.show-card-label { color:#FF6B35; font-size:12px; font-weight:600; letter-spacing:1.5px; text-transform:uppercase; margin-bottom:8px; }
+.show-card-title { font-size:24px; font-weight:800; letter-spacing:-0.5px; margin-bottom:24px; }
+.show-row { display:flex; justify-content:space-between; gap:16px; padding:14px 0; border-bottom:1px solid rgba(255,255,255,0.06); font-size:15px; }
+.show-row:last-child { border-bottom:none; }
+.show-row span { color:rgba(255,255,255,0.5); }
+.show-row strong { text-align:right; font-weight:600; }
+.stat-strip { padding:56px 0; border-top:1px solid rgba(255,255,255,0.05); border-bottom:1px solid rgba(255,255,255,0.05); background:rgba(255,107,53,0.03); }
+.strip-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:32px; }
+.strip-num { display:block; font-size:clamp(32px,4vw,48px); font-weight:900; color:#FF6B35; letter-spacing:-1.5px; line-height:1; margin-bottom:12px; }
+.strip-label { font-size:14px; color:rgba(255,255,255,0.65); line-height:1.5; }
+.block { padding:100px 0; border-top:1px solid rgba(255,255,255,0.05); }
+.narrow { max-width:820px; }
+.center, .center-head { text-align:center; }
+.center-head { max-width:820px; margin:0 auto 56px; }
+.block h2, .final-cta h2 { font-size:clamp(32px,4vw,52px); font-weight:800; line-height:1.08; letter-spacing:-1.5px; margin-bottom:24px; }
+.lead { font-size:18px; line-height:1.7; color:rgba(255,255,255,0.7); }
+.lead strong { color:#fff; }
+.segment-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+.segment, .step { background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius:16px; padding:28px; }
+.seg-pct, .step-num { display:block; color:#FF6B35; font-weight:900; font-size:36px; letter-spacing:-1px; margin-bottom:12px; line-height:1; }
+.step-num { font-size:14px; letter-spacing:1.5px; font-weight:700; }
+.segment h3, .step h3 { font-size:18px; font-weight:700; margin-bottom:8px; }
+.segment p, .step p { font-size:15px; color:rgba(255,255,255,0.6); line-height:1.6; }
+.steps { display:grid; grid-template-columns:repeat(5,1fr); gap:16px; }
+.final-cta { padding:120px 0; border-top:1px solid rgba(255,255,255,0.05); background:radial-gradient(ellipse at center, rgba(255,107,53,0.1) 0%, transparent 65%); }
+.final-cta .container { margin:0 auto; }
+.final-cta .lead { margin-bottom:40px; }
+.cta-alt { margin-top:24px; font-size:14px; color:rgba(255,255,255,0.5); }
+.cta-alt a { color:#FF6B35; }
+@media (max-width: 1024px) {
+  .steps { grid-template-columns:1fr 1fr; }
+  .segment-grid { grid-template-columns:1fr 1fr; }
+  .strip-grid { grid-template-columns:1fr 1fr; }
+}
+@media (max-width: 768px) {
+  .container { padding: 0 20px; }
+  .hero { padding: 40px 0 40px; }
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+  .hero h1 { font-size: 44px; letter-spacing: -1.5px; }
+  .hero-stats { gap: 24px; }
+  .form-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+  .form-wrapper { padding: 28px; }
+  .qualifier-grid { grid-template-columns: 1fr; }
+  .tracker-preview { padding: 24px; }
+  .tracker-page-status { font-size: 10px; }
+  .nav-links { gap: 12px; }
+  .nav-links a:not(.btn) { display: none; }
+}
+
+@media (max-width: 768px) {
+  .steps, .segment-grid { grid-template-columns:1fr; }
+  .block, .final-cta { padding:72px 0; }
+  .show-card { padding:24px; }
+  .show-row { font-size:14px; }
+  .hero-ctas .btn { width:100%; text-align:center; }
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo">Fabio<span>Cesar</span></a>
+    <div class="nav-links">
+      <a href="#numeros">Os números</a>
+      <a href="#metodo">Como trabalho</a>
+      <a href="#conversa" class="btn btn-primary">Agendar conversa</a>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <span class="eyebrow">Para empresas brasileiras · National Restaurant Show 2027</span>
+        <h1>A porta de entrada do food service <span class="highlight">americano.</span></h1>
+        <p class="hero-sub">Sou brasileiro e trabalho em Chicago, no time do National Restaurant Show. Ajudo empresas brasileiras a chegar aos compradores do food service dos Estados Unidos com uma estratégia de 12 meses, e não apenas com um estande.</p>
+        <div class="hero-ctas">
+          <a href="#conversa" class="btn btn-primary btn-lg btn-arrow">Agendar uma conversa</a>
+          <a href="#numeros" class="btn btn-ghost btn-lg">Ver os números</a>
+        </div>
+        <p class="tagline">Nascido no Brasil. Construído em Chicago.</p>
+      </div>
+      <div class="show-card">
+        <div class="show-card-label">O Show em 2027</div>
+        <div class="show-card-title">National Restaurant Show</div>
+        <div class="show-row"><span>Edição</span><strong>106ª</strong></div>
+        <div class="show-row"><span>Datas</span><strong>22 a 25 de maio de 2027</strong></div>
+        <div class="show-row"><span>Local</span><strong>McCormick Place, Chicago</strong></div>
+        <div class="show-row"><span>Público em 2026</span><strong>55.000+ profissionais</strong></div>
+        <div class="show-row"><span>Organizações</span><strong>15.000+</strong></div>
+        <div class="show-row"><span>Expositores</span><strong>~2.300 empresas</strong></div>
+        <div class="show-row"><span>Estande a partir de</span><strong>US$ 5.700 (100 pés² · ~9 m²)</strong></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="stat-strip" id="numeros">
+  <div class="container">
+    <div class="strip-grid">
+      <div class="strip-item"><span class="strip-num">90%</span><span class="strip-label">dos visitantes decidem ou influenciam compras</span></div>
+      <div class="strip-item"><span class="strip-num">98 de 100</span><span class="strip-label">maiores redes de restaurantes dos EUA estiveram no Show de 2026</span></div>
+      <div class="strip-item"><span class="strip-num">40%+</span><span class="strip-label">dos visitantes não vão a nenhum outro evento do setor</span></div>
+      <div class="strip-item"><span class="strip-num">112</span><span class="strip-label">países representados entre os visitantes</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="container narrow">
+    <span class="eyebrow">Já é um mercado internacional</span>
+    <h2>Sua empresa não seria a primeira a <span class="highlight">vir de fora.</span></h2>
+    <p class="lead">Em 2026, o Show recebeu <strong>580 expositores internacionais de 44 países</strong> e mais de <strong>880 empresas exportadoras</strong>. O comprador americano que circula pelo pavilhão já espera encontrar fornecedores do mundo inteiro. A pergunta não é se o mercado está aberto. É se a sua empresa vai chegar preparada.</p>
+  </div>
+</section>
+
+<section class="block">
+  <div class="container">
+    <div class="center-head">
+      <span class="eyebrow">Quem está no pavilhão</span>
+      <h2>Todos os compradores do food service, <span class="highlight">em quatro dias.</span></h2>
+      <p class="lead">A maioria do público é de nível C, presidentes e VPs com poder de decisão. Divisão por segmento, conforme os dados publicados pelo próprio Show:</p>
+    </div>
+    <div class="segment-grid">
+      <div class="segment"><span class="seg-pct">32%</span><h3>Restaurantes independentes</h3><p>~11.500 visitantes</p></div>
+      <div class="segment"><span class="seg-pct">24%</span><h3>Redes de restaurantes</h3><p>~8.600 · McDonald's, Starbucks, Chipotle</p></div>
+      <div class="segment"><span class="seg-pct">22%</span><h3>Institucional</h3><p>~7.900 · Aramark, Compass, Sodexo, universidades</p></div>
+      <div class="segment"><span class="seg-pct">16%</span><h3>Distribuidores</h3><p>~5.700 · Sysco, US Foods, TriMark</p></div>
+      <div class="segment"><span class="seg-pct">3%</span><h3>Hotelaria e cruzeiros</h3><p>~1.000 · Marriott, Hyatt, Royal Caribbean</p></div>
+      <div class="segment"><span class="seg-pct">3%</span><h3>Varejo</h3><p>~1.000 · Costco, Publix, Walmart</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="container narrow">
+    <span class="eyebrow">A comparação certa</span>
+    <h2>Isso não é uma decisão de feira. É uma decisão de <span class="highlight">exportação.</span></h2>
+    <p class="lead">Uma empresa brasileira que quer vender nos EUA não está comparando o National Restaurant Show com outra feira. Está comparando com abrir um escritório de vendas, contratar um broker ou não fazer nada. Em quatro dias, o Show coloca sua empresa diante de redes, distribuidores e operadores que levariam anos para alcançar um por um. A minha função é garantir que esses quatro dias rendam o ano inteiro.</p>
+  </div>
+</section>
+
+<section class="block" id="metodo">
+  <div class="container">
+    <div class="center-head">
+      <span class="eyebrow">Como trabalho</span>
+      <h2>O estande é a parte <span class="highlight">mais barata.</span></h2>
+      <p class="lead">Uma feira não é um evento de quatro dias. É um sistema de 12 meses. É assim que eu estruturo o trabalho com cada empresa:</p>
+    </div>
+    <div class="steps">
+      <div class="step"><span class="step-num">01</span><h3>Avaliação</h3><p>Antes de qualquer contrato: o Show faz sentido para o seu produto, a sua capacidade de exportação e o seu objetivo nos EUA? Se não fizer, eu digo.</p></div>
+      <div class="step"><span class="step-num">02</span><h3>Estratégia e orçamento</h3><p>A regra 20/45/35: 20% no estande, 45% na operação e 35% em vendas e marketing. A maioria das empresas inverte essa conta e paga caro por isso.</p></div>
+      <div class="step"><span class="step-num">03</span><h3>Pré-Show</h3><p>Definir quem precisa visitar seu estande (redes, distribuidores, importadores) e chegar a Chicago com reuniões, não com esperança.</p></div>
+      <div class="step"><span class="step-num">04</span><h3>No pavilhão</h3><p>Equipe, demonstração e captura de leads pensadas para o comprador americano, que decide rápido e compara tudo.</p></div>
+      <div class="step"><span class="step-num">05</span><h3>Regra das 48 horas</h3><p>O padrão do setor é retomar o contato em 10 dias úteis. Nós retomamos em 48 horas, enquanto o comprador ainda lembra de você.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="about-mini">
+  <div class="container">
+    <div class="about-mini-content">
+      <span class="eyebrow">Quem sou</span>
+      <h2>Fabio Cesar. Brasileiro, baseado em Chicago, dentro do time do Show.</h2>
+      <p>Sou consultor no time do National Restaurant Show, que é produzido pela Informa. Atendo algumas das contas mais importantes do Show nos Estados Unidos: os expositores mais antigos e as empresas com maior potencial de crescimento.</p>
+      <p>Estou construindo o território Brasil do zero e passo três meses por ano no país, atendendo empresas pessoalmente. A conversa acontece em português, do primeiro contato até o pavilhão, <strong style="color:#fff;">e eu conheço os dois lados: como a empresa brasileira decide e como o comprador americano compra.</strong></p>
+    </div>
+  </div>
+</section>
+
+<section class="qualifier">
+  <div class="container">
+    <span class="qualifier-eyebrow">Para quem é</span>
+    <h2>Faz sentido conversar <span class="highlight">se a sua empresa...</span></h2>
+    <div class="qualifier-grid">
+      <div class="qualifier-card">
+        <h3>É um bom momento se você</h3>
+        <ul class="qualifier-list">
+          <li><span class="qualifier-icon icon-yes">✓</span>Fabrica alimentos, bebidas, equipamentos ou tecnologia para food service</li>
+          <li><span class="qualifier-icon icon-yes">✓</span>Já exporta, ou tem capacidade e certificações para começar</li>
+          <li><span class="qualifier-icon icon-yes">✓</span>Quer redes, distribuidores ou importadores nos EUA, não só visibilidade</li>
+          <li><span class="qualifier-icon icon-yes">✓</span>Está disposta a tratar os EUA como um projeto de 12 meses</li>
+        </ul>
+      </div>
+      <div class="qualifier-card">
+        <h3>Ainda não é o momento se você</h3>
+        <ul class="qualifier-list">
+          <li><span class="qualifier-icon icon-no">✕</span>Não consegue atender pedidos nos EUA nos próximos 12 a 18 meses</li>
+          <li><span class="qualifier-icon icon-no">✕</span>Procura só um estande, sem plano para antes e depois do Show</li>
+          <li><span class="qualifier-icon icon-no">✕</span>Espera fechar contratos em quatro dias sem acompanhamento</li>
+          <li><span class="qualifier-icon icon-no">✕</span>Não tem ninguém para dar continuidade aos contatos depois do Show</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="faq">
+  <div class="container">
+    <div class="faq-content">
+      <div class="faq-eyebrow"><span class="eyebrow">Perguntas frequentes</span></div>
+      <h2>O que você provavelmente <span class="highlight">está pensando.</span></h2>
+
+      <div class="faq-item">
+        <div class="faq-question">Quanto custa expor?</div>
+        <div class="faq-answer">Em 2027, os estandes começam em US$ 5.700 para 100 pés² (cerca de 9 m²). Mas o estande é a menor parte do investimento: pela regra 20/45/35, ele deve representar cerca de 20% do orçamento total. Na nossa conversa, montamos esse orçamento completo com você.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Ainda não temos distribuidor nos EUA. Faz sentido?</div>
+        <div class="faq-answer">Muitas vezes é exatamente por isso que faz sentido. Cerca de 16% do público, ou ~5.700 pessoas, vem de distribuidores, incluindo Sysco, US Foods e TriMark. Poucos lugares reúnem tantos compradores desse canal no mesmo pavilhão.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Preciso falar inglês para começar?</div>
+        <div class="faq-answer">Não. Toda a nossa conversa, do planejamento ao pós-Show, pode ser em português. No pavilhão, vamos planejar juntos quem da sua equipe vai atender os compradores americanos.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Como é a primeira conversa?</div>
+        <div class="faq-answer">São 30 minutos, em português. Entendo o seu produto, a sua situação de exportação e o seu objetivo nos EUA, e digo honestamente se o Show é o próximo passo certo para a sua empresa. Se não for, você sai da conversa sabendo por quê.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="final-cta" id="conversa">
+  <div class="container narrow center">
+    <span class="eyebrow">Próximo passo</span>
+    <h2>Vamos conversar sobre os <span class="highlight">EUA.</span></h2>
+    <p class="lead">Escolha o horário que funciona melhor na sua agenda. A conversa é em português.</p>
+    <a href="https://bookings.cloud.microsoft/bookwithme/user/af158eaba657485a98766316ff46ddca@informa.com?anonymous&amp;ismsaljsauthenabled&amp;ep=pcard" target="_blank" rel="noopener" class="btn btn-primary btn-lg btn-arrow">Agendar uma conversa</a>
+    <p class="cta-alt">Prefere e-mail? <a href="mailto:fabio.cesar@informa.com">fabio.cesar@informa.com</a></p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <p class="footer-tag">Números de 2026 publicados pelo <a href="https://www.nationalrestaurantshow.com/" target="_blank" rel="noopener">National Restaurant Show</a>.</p>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/fabiocesarjr/" target="_blank" rel="noopener" title="LinkedIn">in</a>
+      <a href="https://fabioimportsbrazil.substack.com" target="_blank" rel="noopener" title="Substack">✎</a>
+      <a href="https://www.instagram.com/fabioimportsbrazil/" target="_blank" rel="noopener" title="Instagram">📷</a>
+      <a href="https://www.tiktok.com/@fabioimportsbrazil" target="_blank" rel="noopener" title="TikTok">🎵</a>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 Fabio Cesar · <a href="index.html">Tradeshow ROI Playbook (EN)</a> · <a href="methodology.html">Metodologia (EN)</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('.faq-question').forEach(q => {
+  q.addEventListener('click', () => q.parentElement.classList.toggle('active'));
+});
+</script>
+
+</body>
+</html>
